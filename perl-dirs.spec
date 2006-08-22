@@ -1,7 +1,7 @@
 Summary:	Common dirs for Perl modules
 Name:		perl-dirs
 Version:	1.0
-Release:	1
+Release:	2
 License:	Public Domain
 Group:		Development/Languages/Perl
 Requires:	%{perl_vendorarch}
@@ -62,7 +62,6 @@ done <<EOF
 %{perl_vendorarch}/Unicode
 %{perl_vendorarch}/WWW
 %{perl_vendorarch}/XML
-%{perl_vendorarch}/auto
 %{perl_vendorarch}/auto/AI
 %{perl_vendorarch}/auto/Algorithm
 %{perl_vendorarch}/auto/Astro
@@ -267,3 +266,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %{perl_vendorlib}/*
 %{perl_vendorarch}/*
+%exclude %{perl_vendorarch}/auto
