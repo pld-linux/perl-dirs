@@ -1,7 +1,7 @@
 Summary:	Common dirs for Perl modules
 Name:		perl-dirs
 Version:	1.0
-Release:	3
+Release:	4
 License:	Public Domain
 Group:		Development/Languages/Perl
 Requires:	%{perl_vendorarch}
@@ -107,6 +107,7 @@ done <<EOF
 %{perl_vendorlib}/AI/NeuralNet
 %{perl_vendorlib}/Algorithm
 %{perl_vendorlib}/Apache
+%{perl_vendorlib}/Apache2
 %{perl_vendorlib}/App
 %{perl_vendorlib}/App/Packer
 %{perl_vendorlib}/Archive
