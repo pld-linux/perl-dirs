@@ -5,7 +5,7 @@
 Summary:	Common dirs for Perl modules
 Name:		perl-dirs
 Version:	1.0
-Release:	4
+Release:	5
 License:	Public Domain
 Group:		Development/Languages/Perl
 Requires:	%{perl_vendorarch}
@@ -185,6 +185,7 @@ done <<EOF
 %{perl_vendorlib}/Math/Fractal
 %{perl_vendorlib}/Modem
 %{perl_vendorlib}/Module
+%{perl_vendorlib}/Module/Pluggable
 %{perl_vendorlib}/Net
 %{perl_vendorlib}/Net/IDN
 %{perl_vendorlib}/Net/SMTP
