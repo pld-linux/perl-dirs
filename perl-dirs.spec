@@ -3,6 +3,7 @@
 %{expand:%%define	perl_vendorlib	%{perl_vendorlib}}
 #
 Summary:	Common dirs for Perl modules
+Summary(pl):	Katalogi wspólne dla modu³ów Perla
 Name:		perl-dirs
 Version:	1.0
 Release:	5
@@ -14,6 +15,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Common dirs for Perl modules.
+
+%description -l pl
+Katalogi wspólne dla modu³ów Perla.
 
 %prep
 
