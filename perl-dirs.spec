@@ -6,12 +6,12 @@ Summary:	Common dirs for Perl modules
 Summary(pl):	Katalogi wspólne dla modu³ów Perla
 Name:		perl-dirs
 Version:	1.0
-Release:	8
+Release:	9
 License:	Public Domain
 Group:		Development/Languages/Perl
 Requires:	%{perl_vendorarch}
 Requires:	%{perl_vendorlib}
-Provides:	%{name}(%{_target_base_arch})
+Provides:	%{name}(%{_target_cpu})
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
