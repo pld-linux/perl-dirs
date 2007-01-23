@@ -9,6 +9,7 @@ Version:	1.0
 Release:	11
 License:	Public Domain
 Group:		Development/Languages/Perl
+BuildRequires:	perl-base
 Requires:	%{perl_vendorarch}
 Requires:	%{perl_vendorlib}
 Provides:	%{name}(%{_target_cpu})
