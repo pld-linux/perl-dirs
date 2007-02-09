@@ -6,7 +6,7 @@ Summary:	Common dirs for Perl modules
 Summary(pl):	Katalogi wspólne dla modu³ów Perla
 Name:		perl-dirs
 Version:	1.0
-Release:	11
+Release:	12
 License:	Public Domain
 Group:		Development/Languages/Perl
 BuildRequires:	perl-base
@@ -66,6 +66,7 @@ done <<EOF
 %{perl_vendorarch}/Speech
 %{perl_vendorarch}/Speech/Recognizer
 %{perl_vendorarch}/String
+%{perl_vendorarch}/Sub
 %{perl_vendorarch}/Sys
 %{perl_vendorarch}/Template
 %{perl_vendorarch}/Term
@@ -111,6 +112,7 @@ done <<EOF
 %{perl_vendorarch}/auto/Speech
 %{perl_vendorarch}/auto/Speech/Recognizer
 %{perl_vendorarch}/auto/String
+%{perl_vendorarch}/auto/Sub
 %{perl_vendorarch}/auto/Sys
 %{perl_vendorarch}/auto/Term
 %{perl_vendorarch}/auto/Text
