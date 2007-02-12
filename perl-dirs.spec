@@ -3,7 +3,7 @@
 %{expand:%%define	perl_vendorlib	%{perl_vendorlib}}
 #
 Summary:	Common dirs for Perl modules
-Summary(pl.UTF-8):   Katalogi wspólne dla modułów Perla
+Summary(pl.UTF-8):	Katalogi wspólne dla modułów Perla
 Name:		perl-dirs
 Version:	1.0
 Release:	12
