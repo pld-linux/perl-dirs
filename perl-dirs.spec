@@ -1,4 +1,4 @@
-# This it avoid calling perl so many times
+# This is to avoid calling perl so many times
 %{expand:%%define	perl_vendorarch	%{perl_vendorarch}}
 %{expand:%%define	perl_vendorlib	%{perl_vendorlib}}
 #
@@ -52,10 +52,10 @@ done <<EOF
 %{perl_vendorarch}/Digest
 %{perl_vendorarch}/Encode
 %{perl_vendorarch}/File
+%{perl_vendorarch}/IO
 %{perl_vendorarch}/IPC
 %{perl_vendorarch}/Image
 %{perl_vendorarch}/Inline
-%{perl_vendorarch}/IO
 %{perl_vendorarch}/Linux
 %{perl_vendorarch}/Locale
 %{perl_vendorarch}/Math
@@ -98,10 +98,10 @@ done <<EOF
 %{perl_vendorarch}/auto/Digest
 %{perl_vendorarch}/auto/Encode
 %{perl_vendorarch}/auto/File
+%{perl_vendorarch}/auto/IO
 %{perl_vendorarch}/auto/IPC
 %{perl_vendorarch}/auto/Image
 %{perl_vendorarch}/auto/Inline
-%{perl_vendorarch}/auto/IO
 %{perl_vendorarch}/auto/Linux
 %{perl_vendorarch}/auto/Locale
 %{perl_vendorarch}/auto/Math
@@ -257,9 +257,9 @@ done <<EOF
 %{perl_vendorlib}/UNIVERSAL
 %{perl_vendorlib}/Unicode
 %{perl_vendorlib}/Unix
-%{perl_vendorlib}/WebService
 %{perl_vendorlib}/WWW
 %{perl_vendorlib}/WWW/Google
+%{perl_vendorlib}/WebService
 %{perl_vendorlib}/X500
 %{perl_vendorlib}/XML
 %{perl_vendorlib}/XML/Filter
