@@ -6,7 +6,7 @@ Summary:	Common dirs for Perl modules
 Summary(pl.UTF-8):	Katalogi wspólne dla modułów Perla
 Name:		perl-dirs
 Version:	1.0
-Release:	18
+Release:	19
 License:	Public Domain
 Group:		Development/Languages/Perl
 BuildRequires:	perl-base
@@ -210,6 +210,7 @@ done <<EOF
 %{perl_vendorlib}/Net/IDN
 %{perl_vendorlib}/Net/SMTP
 %{perl_vendorlib}/NetAddr
+%{perl_vendorlib}/NetAddr/IP
 %{perl_vendorlib}/NetServer
 %{perl_vendorlib}/Netscape
 %{perl_vendorlib}/News
