@@ -1,3 +1,8 @@
+%bcond_with	bootstrap
+%if %{with bootstrap}
+%define	perl_vendorarch	%{_libdir}/perl5/vendor_perl/5.10.0/%{_target_platform}-multi
+%define	perl_vendorlib	%{_datadir}/perl5/vendor_perl
+%endif
 # This is to avoid calling perl so many times
 %{expand:%%define	perl_vendorarch	%{perl_vendorarch}}
 %{expand:%%define	perl_vendorlib	%{perl_vendorlib}}
@@ -6,7 +11,7 @@ Summary:	Common dirs for Perl modules
 Summary(pl.UTF-8):	Katalogi wspólne dla modułów Perla
 Name:		perl-dirs
 Version:	1.0
-Release:	20
+Release:	20.1
 License:	Public Domain
 Group:		Development/Languages/Perl
 BuildRequires:	perl-base
