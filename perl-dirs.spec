@@ -1,6 +1,10 @@
-%bcond_with	bootstrap
+#
+# Conditional build:
+%bcond_with	bootstrap	# bootstrap for perl %{new_perl_ver}
+#
 %if %{with bootstrap}
-%global	perl_vendorarch	%{_libdir}/perl5/vendor_perl/5.10.0/%{_target_platform}-thread-multi
+%{!?new_perl_ver:%define	new_perl_ver	5.10.0}
+%global	perl_vendorarch	%{_libdir}/perl5/vendor_perl/%{new_perl_ver}/%{_target_platform}-thread-multi
 %global	perl_vendorlib	%{_datadir}/perl5/vendor_perl
 %endif
 # This is to avoid calling perl so many times
