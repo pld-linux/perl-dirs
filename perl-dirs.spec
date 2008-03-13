@@ -7,9 +7,6 @@
 %global	perl_vendorarch	%{_libdir}/perl5/vendor_perl/%{new_perl_ver}/%{_target_platform}-thread-multi
 %global	perl_vendorlib	%{_datadir}/perl5/vendor_perl
 %endif
-# This is to avoid calling perl so many times
-%{expand:%%define	perl_vendorarch	%{perl_vendorarch}}
-%{expand:%%define	perl_vendorlib	%{perl_vendorlib}}
 #
 Summary:	Common dirs for Perl modules
 Summary(pl.UTF-8):	Katalogi wspólne dla modułów Perla
@@ -19,6 +16,7 @@ Release:	4
 License:	Public Domain
 Group:		Development/Languages/Perl
 %{!?with_bootstrap:BuildRequires:	perl-base}
+BuildRequires:	rpmbuild(macros) >= 1.442
 Requires:	%{perl_vendorarch}
 Requires:	%{perl_vendorlib}
 Provides:	%{name}(%{_target_cpu})
