@@ -231,6 +231,7 @@ done <<EOF
 %{perl_vendorlib}/PerlIO/via
 %{perl_vendorlib}/Pod
 %{perl_vendorlib}/PostScript
+%{perl_vendorlib}/Probe
 %{perl_vendorlib}/Proc
 %{perl_vendorlib}/Quantum
 %{perl_vendorlib}/RADIUS
@@ -252,6 +253,7 @@ done <<EOF
 %{perl_vendorlib}/String
 %{perl_vendorlib}/Sub
 %{perl_vendorlib}/Sys
+%{perl_vendorlib}/TAP
 %{perl_vendorlib}/TeX
 %{perl_vendorlib}/Template
 %{perl_vendorlib}/Term
