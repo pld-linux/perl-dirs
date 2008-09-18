@@ -183,6 +183,7 @@ done <<EOF
 %{perl_vendorlib}/File
 %{perl_vendorlib}/File/Path
 %{perl_vendorlib}/Filesys
+%{perl_vendorlib}/Filter
 %{perl_vendorlib}/Font
 %{perl_vendorlib}/Games
 %{perl_vendorlib}/Getopt
