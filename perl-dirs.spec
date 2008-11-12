@@ -62,10 +62,10 @@ done <<EOF
 %{perl_vendorarch}/File
 %{perl_vendorarch}/IO
 %{perl_vendorarch}/IPC
-%{perl_vendorarch}/Image
-%{perl_vendorarch}/Inline
 %{perl_vendorarch}/IPTables
 %{perl_vendorarch}/IPTables/IPv4
+%{perl_vendorarch}/Image
+%{perl_vendorarch}/Inline
 %{perl_vendorarch}/Linux
 %{perl_vendorarch}/Locale
 %{perl_vendorarch}/Math
@@ -110,10 +110,10 @@ done <<EOF
 %{perl_vendorarch}/auto/File
 %{perl_vendorarch}/auto/IO
 %{perl_vendorarch}/auto/IPC
-%{perl_vendorarch}/auto/Image
-%{perl_vendorarch}/auto/Inline
 %{perl_vendorarch}/auto/IPTables
 %{perl_vendorarch}/auto/IPTables/IPv4
+%{perl_vendorarch}/auto/Image
+%{perl_vendorarch}/auto/Inline
 %{perl_vendorarch}/auto/Linux
 %{perl_vendorarch}/auto/List
 %{perl_vendorarch}/auto/Locale
@@ -154,6 +154,7 @@ done <<EOF
 %{perl_vendorlib}/Bundle
 %{perl_vendorlib}/Business
 %{perl_vendorlib}/CGI
+%{perl_vendorlib}/CSS
 %{perl_vendorlib}/Cache
 %{perl_vendorlib}/Carp
 %{perl_vendorlib}/Chart
@@ -164,7 +165,6 @@ done <<EOF
 %{perl_vendorlib}/Config
 %{perl_vendorlib}/Convert
 %{perl_vendorlib}/Crypt
-%{perl_vendorlib}/CSS
 %{perl_vendorlib}/DBD
 %{perl_vendorlib}/DNS
 %{perl_vendorlib}/Data
@@ -177,9 +177,9 @@ done <<EOF
 %{perl_vendorlib}/Email
 %{perl_vendorlib}/Email/Simple
 %{perl_vendorlib}/Error
+%{perl_vendorlib}/Event
 %{perl_vendorlib}/Exporter
 %{perl_vendorlib}/ExtUtils
-%{perl_vendorlib}/Event
 %{perl_vendorlib}/File
 %{perl_vendorlib}/File/Path
 %{perl_vendorlib}/Filesys
