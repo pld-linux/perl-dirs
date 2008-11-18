@@ -11,15 +11,14 @@
 Summary:	Common dirs for Perl modules
 Summary(pl.UTF-8):	Katalogi wspólne dla modułów Perla
 Name:		perl-dirs
-Version:	2.0
-Release:	7
+Version:	2.1
+Release:	1
 License:	Public Domain
 Group:		Development/Languages/Perl
 %{!?with_bootstrap:BuildRequires:	perl-base}
+BuildRequires:	rpm >= 4.4.9-56
 BuildRequires:	rpmbuild(macros) >= 1.442
-Requires:	%{perl_vendorarch}
-Requires:	%{perl_vendorlib}
-Provides:	%{name}(%{_target_cpu})
+Provides:	%{name}(%{_target_cpu}) = %{version}-%{release}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -311,6 +310,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%dir %{perl_vendorlib}
 %{perl_vendorlib}/*
+%dir %{perl_vendorarch}
 %{perl_vendorarch}/*
 %exclude %dir %{perl_vendorarch}/auto
