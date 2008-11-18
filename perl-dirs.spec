@@ -21,6 +21,9 @@ BuildRequires:	rpmbuild(macros) >= 1.442
 Provides:	%{name}(%{_target_cpu}) = %{version}-%{release}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
+# no binary blobs packaged
+%define		_enable_debug_packages	0
+
 %description
 Common dirs for Perl modules.
 
