@@ -15,7 +15,7 @@ Summary:	Common dirs for Perl modules
 Summary(pl.UTF-8):	Katalogi wspólne dla modułów Perla
 Name:		perl-dirs
 Version:	2.1
-Release:	6
+Release:	7
 License:	Public Domain
 Group:		Development/Languages/Perl
 %{!?with_bootstrap:BuildRequires:	perl-base}
@@ -166,8 +166,8 @@ done <<EOF
 %{perl_vendorlib}/Carp
 %{perl_vendorlib}/Chart
 %{perl_vendorlib}/Cisco
-%{perl_vendorlib}/Class
 %{perl_vendorlib}/Class/Data
+%{perl_vendorlib}/Class/Method
 %{perl_vendorlib}/Compress
 %{perl_vendorlib}/Config
 %{perl_vendorlib}/Convert
