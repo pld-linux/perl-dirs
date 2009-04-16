@@ -15,7 +15,7 @@ Summary:	Common dirs for Perl modules
 Summary(pl.UTF-8):	Katalogi wspólne dla modułów Perla
 Name:		perl-dirs
 Version:	2.1
-Release:	10
+Release:	11
 License:	Public Domain
 Group:		Development/Languages/Perl
 %{!?with_bootstrap:BuildRequires:	perl-base}
@@ -160,10 +160,9 @@ done <<EOF
 %{perl_vendorlib}/Barcode
 %{perl_vendorlib}/Bundle
 %{perl_vendorlib}/Business
-%{perl_vendorlib}/CGI
-%{perl_vendorlib}/CSS
 %{perl_vendorlib}/Cache
 %{perl_vendorlib}/Carp
+%{perl_vendorlib}/CGI
 %{perl_vendorlib}/Chart
 %{perl_vendorlib}/Cisco
 %{perl_vendorlib}/Class/Data
@@ -173,19 +172,21 @@ done <<EOF
 %{perl_vendorlib}/Config
 %{perl_vendorlib}/Convert
 %{perl_vendorlib}/Crypt
-%{perl_vendorlib}/DBD
-%{perl_vendorlib}/DNS
+%{perl_vendorlib}/CSS
 %{perl_vendorlib}/Data
 %{perl_vendorlib}/Date
 %{perl_vendorlib}/Date/Japanese
 %{perl_vendorlib}/DateTime
+%{perl_vendorlib}/DBD
 %{perl_vendorlib}/Devel
 %{perl_vendorlib}/Device
 %{perl_vendorlib}/Digest
+%{perl_vendorlib}/DNS
 %{perl_vendorlib}/Email
 %{perl_vendorlib}/Email/Simple
 %{perl_vendorlib}/Error
 %{perl_vendorlib}/Event
+%{perl_vendorlib}/Expect
 %{perl_vendorlib}/Exporter
 %{perl_vendorlib}/ExtUtils
 %{perl_vendorlib}/File
