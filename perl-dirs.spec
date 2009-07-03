@@ -15,7 +15,7 @@ Summary:	Common dirs for Perl modules
 Summary(pl.UTF-8):	Katalogi wspólne dla modułów Perla
 Name:		perl-dirs
 Version:	2.1
-Release:	12
+Release:	13
 License:	Public Domain
 Group:		Development/Languages/Perl
 %{!?with_bootstrap:BuildRequires:	perl-base}
@@ -150,6 +150,9 @@ done <<EOF
 %{perl_vendorlib}/Apache2
 %{perl_vendorlib}/App
 %{perl_vendorlib}/App/Packer
+%{perl_vendorlib}/App/Prove
+%{perl_vendorlib}/App/Prove/State
+%{perl_vendorlib}/App/Prove/State/Result
 %{perl_vendorlib}/Archive
 %{perl_vendorlib}/Array
 %{perl_vendorlib}/Astro
@@ -166,6 +169,7 @@ done <<EOF
 %{perl_vendorlib}/Chart
 %{perl_vendorlib}/Cisco
 %{perl_vendorlib}/Class/Data
+%{perl_vendorlib}/Class/Inspector
 %{perl_vendorlib}/Class/Method
 %{perl_vendorlib}/Clone
 %{perl_vendorlib}/Compress
@@ -194,6 +198,9 @@ done <<EOF
 %{perl_vendorlib}/Filesys
 %{perl_vendorlib}/Filter
 %{perl_vendorlib}/Font
+%{perl_vendorlib}/Formatter
+%{perl_vendorlib}/Formatter/Console
+%{perl_vendorlib}/Formatter/File
 %{perl_vendorlib}/Games
 %{perl_vendorlib}/Getopt
 %{perl_vendorlib}/GnuPG
@@ -246,6 +253,12 @@ done <<EOF
 %{perl_vendorlib}/Package
 %{perl_vendorlib}/Params
 %{perl_vendorlib}/Parse
+%{perl_vendorlib}/Parser
+%{perl_vendorlib}/Parser/Iterator
+%{perl_vendorlib}/Parser/Result
+%{perl_vendorlib}/Parser/Scheduler
+%{perl_vendorlib}/Parser/Source
+%{perl_vendorlib}/Parser/YAMLish
 %{perl_vendorlib}/PerlIO
 %{perl_vendorlib}/PerlIO/via
 %{perl_vendorlib}/Pod
