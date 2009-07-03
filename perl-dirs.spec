@@ -15,7 +15,7 @@ Summary:	Common dirs for Perl modules
 Summary(pl.UTF-8):	Katalogi wspólne dla modułów Perla
 Name:		perl-dirs
 Version:	2.1
-Release:	13
+Release:	14
 License:	Public Domain
 Group:		Development/Languages/Perl
 %{!?with_bootstrap:BuildRequires:	perl-base}
@@ -201,9 +201,6 @@ done <<EOF
 %{perl_vendorlib}/Filesys
 %{perl_vendorlib}/Filter
 %{perl_vendorlib}/Font
-%{perl_vendorlib}/Formatter
-%{perl_vendorlib}/Formatter/Console
-%{perl_vendorlib}/Formatter/File
 %{perl_vendorlib}/Games
 %{perl_vendorlib}/Getopt
 %{perl_vendorlib}/GnuPG
@@ -256,12 +253,6 @@ done <<EOF
 %{perl_vendorlib}/Package
 %{perl_vendorlib}/Params
 %{perl_vendorlib}/Parse
-%{perl_vendorlib}/Parser
-%{perl_vendorlib}/Parser/Iterator
-%{perl_vendorlib}/Parser/Result
-%{perl_vendorlib}/Parser/Scheduler
-%{perl_vendorlib}/Parser/Source
-%{perl_vendorlib}/Parser/YAMLish
 %{perl_vendorlib}/PerlIO
 %{perl_vendorlib}/PerlIO/via
 %{perl_vendorlib}/Pod
@@ -290,6 +281,15 @@ done <<EOF
 %{perl_vendorlib}/Sub
 %{perl_vendorlib}/Sys
 %{perl_vendorlib}/TAP
+%{perl_vendorlib}/TAP/Formatter
+%{perl_vendorlib}/TAP/Formatter/Console
+%{perl_vendorlib}/TAP/Formatter/File
+%{perl_vendorlib}/TAP/Parser
+%{perl_vendorlib}/TAP/Parser/Iterator
+%{perl_vendorlib}/TAP/Parser/Result
+%{perl_vendorlib}/TAP/Parser/Scheduler
+%{perl_vendorlib}/TAP/Parser/Source
+%{perl_vendorlib}/TAP/Parser/YAMLish
 %{perl_vendorlib}/TeX
 %{perl_vendorlib}/Template
 %{perl_vendorlib}/Term
