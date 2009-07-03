@@ -78,6 +78,7 @@ done <<EOF
 %{perl_vendorarch}/Net
 %{perl_vendorarch}/Ogg
 %{perl_vendorarch}/Ogg/Vorbis
+%{perl_vendorarch}/Params
 %{perl_vendorarch}/PerlIO
 %{perl_vendorarch}/Speech
 %{perl_vendorarch}/Speech/Recognizer
@@ -128,6 +129,8 @@ done <<EOF
 %{perl_vendorarch}/auto/Net
 %{perl_vendorarch}/auto/Ogg
 %{perl_vendorarch}/auto/Ogg/Vorbis
+%{perl_vendorarch}/auto/Params
+%{perl_vendorarch}/auto/Params/Util
 %{perl_vendorarch}/auto/PerlIO
 %{perl_vendorarch}/auto/Regexp
 %{perl_vendorarch}/auto/Speech
