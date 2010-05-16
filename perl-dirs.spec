@@ -1,6 +1,7 @@
 #
 # Conditional build:
 %bcond_without	threads		# build without support for threads in Perl
+# NOTE: increase version if this bcond is enabled
 %bcond_with	perl512		# build for perl 5.12
 
 %if %{with perl512}
@@ -16,11 +17,13 @@
 %define		perlthread		%{?with_threads:-thread-multi}
 %define		perl_vendorarch	%{_libdir}/perl5/vendor_perl/%{abi}/%{_target_platform}%{perlthread}
 %define		perl_vendorlib	%{_datadir}/perl5/vendor_perl
+
+%define		rel		20
 Summary:	Common dirs for Perl modules
 Summary(pl.UTF-8):	Katalogi wspólne dla modułów Perla
 Name:		perl-dirs
 Version:	2.1
-Release:	20@%{abi}
+Release:	%{rel}@%{abi}
 License:	Public Domain
 Group:		Development/Languages/Perl
 %{!?with_bootstrap:BuildRequires:	perl-base}
