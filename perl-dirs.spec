@@ -22,7 +22,7 @@
 Summary:	Common dirs for Perl modules
 Summary(pl.UTF-8):	Katalogi wspólne dla modułów Perla
 Name:		perl-dirs
-Version:	2.2
+Version:	3
 Release:	%{rel}@%{abi}
 License:	Public Domain
 Group:		Development/Languages/Perl
@@ -136,6 +136,7 @@ done <<EOF
 %{perl_vendorarch}/auto/Locale
 %{perl_vendorarch}/auto/Math
 %{perl_vendorarch}/auto/Math/BigInt
+%{perl_vendorarch}/auto/MIME
 %{perl_vendorarch}/auto/Net
 %{perl_vendorarch}/auto/Ogg
 %{perl_vendorarch}/auto/Ogg/Vorbis
