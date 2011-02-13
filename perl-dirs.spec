@@ -1,24 +1,18 @@
 #
 # Conditional build:
 %bcond_without	threads		# build without support for threads in Perl
-# NOTE: increase version if this bcond is enabled
-%bcond_without	perl512		# build for perl 5.12
 
-%if %{with perl512}
+%if "%{pld_release}" == "th" || "%{pld_release}" == "ti"
 %define		abi	5.12.0
 %else
-%if "%{pld_release}" == "th" || "%{pld_release}" == "ti"
-%define		abi	5.10.0
-%else
 %define		abi	5.8.0
-%endif
 %endif
 
 %define		perlthread		%{?with_threads:-thread-multi}
 %define		perl_vendorarch	%{_libdir}/perl5/vendor_perl/%{abi}/%{_target_platform}%{perlthread}
 %define		perl_vendorlib	%{_datadir}/perl5/vendor_perl
 
-%define		rel		2
+%define		rel		3
 Summary:	Common dirs for Perl modules
 Summary(pl.UTF-8):	Katalogi wspólne dla modułów Perla
 Name:		perl-dirs
@@ -26,7 +20,7 @@ Version:	4
 Release:	%{rel}@%{abi}
 License:	Public Domain
 Group:		Development/Languages/Perl
-%{!?with_bootstrap:BuildRequires:	perl-base}
+BuildRequires:	perl-base
 BuildRequires:	rpm >= 4.4.9-56
 BuildRequires:	rpmbuild(macros) >= 1.442
 Provides:	%{name}(%{_target_cpu}) = %{version}-%{release}
@@ -127,6 +121,7 @@ done <<EOF
 %{perl_vendorarch}/auto/Encode
 %{perl_vendorarch}/auto/Event
 %{perl_vendorarch}/auto/File
+%{perl_vendorarch}/auto/HTML
 %{perl_vendorarch}/auto/IO
 %{perl_vendorarch}/auto/IPC
 %{perl_vendorarch}/auto/IPTables
