@@ -18,7 +18,7 @@
 %define		perl_vendorarch	%{_libdir}/perl5/vendor_perl/%{abi}/%{_target_platform}%{perlthread}
 %define		perl_vendorlib	%{_datadir}/perl5/vendor_perl
 
-%define		rel		1
+%define		rel		2
 Summary:	Common dirs for Perl modules
 Summary(pl.UTF-8):	Katalogi wspólne dla modułów Perla
 Name:		perl-dirs
@@ -74,6 +74,7 @@ done <<EOF
 %{perl_vendorarch}/Encode
 %{perl_vendorarch}/Event
 %{perl_vendorarch}/File
+%{perl_vendorarch}/HTML
 %{perl_vendorarch}/IO
 %{perl_vendorarch}/IPC
 %{perl_vendorarch}/IPTables
@@ -82,9 +83,9 @@ done <<EOF
 %{perl_vendorarch}/Inline
 %{perl_vendorarch}/Linux
 %{perl_vendorarch}/Locale
+%{perl_vendorarch}/MIME
 %{perl_vendorarch}/Math
 %{perl_vendorarch}/Math/BigInt
-%{perl_vendorarch}/MIME
 %{perl_vendorarch}/Net
 %{perl_vendorarch}/Ogg
 %{perl_vendorarch}/Ogg/Vorbis
@@ -135,9 +136,9 @@ done <<EOF
 %{perl_vendorarch}/auto/Linux
 %{perl_vendorarch}/auto/List
 %{perl_vendorarch}/auto/Locale
+%{perl_vendorarch}/auto/MIME
 %{perl_vendorarch}/auto/Math
 %{perl_vendorarch}/auto/Math/BigInt
-%{perl_vendorarch}/auto/MIME
 %{perl_vendorarch}/auto/Net
 %{perl_vendorarch}/auto/Ogg
 %{perl_vendorarch}/auto/Ogg/Vorbis
