@@ -12,7 +12,7 @@
 %define		perl_vendorarch	%{_libdir}/perl5/vendor_perl/%{abi}/%{_target_platform}%{perlthread}
 %define		perl_vendorlib	%{_datadir}/perl5/vendor_perl
 
-%define		rel	4
+%define		rel	5
 Summary:	Common dirs for Perl modules
 Summary(pl.UTF-8):	Katalogi wspólne dla modułów Perla
 Name:		perl-dirs
@@ -92,6 +92,7 @@ done <<EOF
 %{perl_vendorarch}/Sys
 %{perl_vendorarch}/Template
 %{perl_vendorarch}/Term
+%{perl_vendorarch}/Test
 %{perl_vendorarch}/Text
 %{perl_vendorarch}/Time
 %{perl_vendorarch}/Unicode
@@ -147,6 +148,7 @@ done <<EOF
 %{perl_vendorarch}/auto/Sub
 %{perl_vendorarch}/auto/Sys
 %{perl_vendorarch}/auto/Term
+%{perl_vendorarch}/auto/Test
 %{perl_vendorarch}/auto/Text
 %{perl_vendorarch}/auto/Time
 %{perl_vendorarch}/auto/Unicode
