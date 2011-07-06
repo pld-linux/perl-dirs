@@ -12,7 +12,7 @@
 %define		perl_vendorarch	%{_libdir}/perl5/vendor_perl/%{abi}/%{_target_platform}%{perlthread}
 %define		perl_vendorlib	%{_datadir}/perl5/vendor_perl
 
-%define		rel	5
+%define		rel	6
 Summary:	Common dirs for Perl modules
 Summary(pl.UTF-8):	Katalogi wspólne dla modułów Perla
 Name:		perl-dirs
@@ -178,6 +178,7 @@ done <<EOF
 %{perl_vendorlib}/Bundle
 %{perl_vendorlib}/Business
 %{perl_vendorlib}/CGI
+%{perl_vendorlib}/CGI/Emulate
 %{perl_vendorlib}/CSS
 %{perl_vendorlib}/Cache
 %{perl_vendorlib}/Carp
@@ -219,6 +220,7 @@ done <<EOF
 %{perl_vendorlib}/Graphics
 %{perl_vendorlib}/HTML
 %{perl_vendorlib}/HTTP
+%{perl_vendorlib}/HTTP/Message
 %{perl_vendorlib}/Hash
 %{perl_vendorlib}/Hook
 %{perl_vendorlib}/I18N
@@ -228,6 +230,7 @@ done <<EOF
 %{perl_vendorlib}/Image
 %{perl_vendorlib}/Inline
 %{perl_vendorlib}/Jabber
+%{perl_vendorlib}/JavaScript
 %{perl_vendorlib}/Language
 %{perl_vendorlib}/Lingua
 %{perl_vendorlib}/Lingua/EN
@@ -278,6 +281,7 @@ done <<EOF
 %{perl_vendorlib}/RPM
 %{perl_vendorlib}/RTF
 %{perl_vendorlib}/Regexp
+%{perl_vendorlib}/Regexp/common
 %{perl_vendorlib}/Rose
 %{perl_vendorlib}/SNMP
 %{perl_vendorlib}/SOAP
@@ -313,6 +317,7 @@ done <<EOF
 %{perl_vendorlib}/Test/Perl
 %{perl_vendorlib}/Test/WWW
 %{perl_vendorlib}/Text
+%{perl_vendorlib}/Text/Password
 %{perl_vendorlib}/Text/Query
 %{perl_vendorlib}/Tie
 %{perl_vendorlib}/Time
