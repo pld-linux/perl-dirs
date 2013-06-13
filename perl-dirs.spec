@@ -12,7 +12,7 @@
 %define		perl_vendorarch	%{_libdir}/perl5/vendor_perl/%{abi}/%{_target_platform}%{perlthread}
 %define		perl_vendorlib	%{_datadir}/perl5/vendor_perl
 
-%define		rel	1
+%define		rel	2
 Summary:	Common dirs for Perl modules
 Summary(pl.UTF-8):	Katalogi wspólne dla modułów Perla
 Name:		perl-dirs
@@ -53,6 +53,7 @@ done <<EOF
 %{perl_vendorarch}/B
 %{perl_vendorarch}/BSD
 %{perl_vendorarch}/Bit
+%{perl_vendorarch}/Cache
 %{perl_vendorarch}/Chemistry
 %{perl_vendorarch}/Class
 %{perl_vendorarch}/Compress
@@ -70,6 +71,7 @@ done <<EOF
 %{perl_vendorarch}/File
 %{perl_vendorarch}/HTML
 %{perl_vendorarch}/IO
+%{perl_vendorarch}/IO/Socket
 %{perl_vendorarch}/IPC
 %{perl_vendorarch}/IPTables
 %{perl_vendorarch}/IPTables/IPv4
@@ -107,6 +109,7 @@ done <<EOF
 %{perl_vendorarch}/auto/Authen
 %{perl_vendorarch}/auto/BSD
 %{perl_vendorarch}/auto/Bit
+%{perl_vendorarch}/auto/Cache
 %{perl_vendorarch}/auto/Chemistry
 %{perl_vendorarch}/auto/Class
 %{perl_vendorarch}/auto/Clone
