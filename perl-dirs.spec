@@ -12,7 +12,7 @@
 %define		perl_vendorarch	%{_libdir}/perl5/vendor_perl/%{abi}/%{_target_platform}%{perlthread}
 %define		perl_vendorlib	%{_datadir}/perl5/vendor_perl
 
-%define		rel	3
+%define		rel	4
 Summary:	Common dirs for Perl modules
 Summary(pl.UTF-8):	Katalogi wspólne dla modułów Perla
 Name:		perl-dirs
@@ -184,6 +184,8 @@ done <<EOF
 %{perl_vendorlib}/Business
 %{perl_vendorlib}/CGI
 %{perl_vendorlib}/CGI/Emulate
+%{perl_vendorlib}/CPAN
+%{perl_vendorlib}/CPAN/Meta
 %{perl_vendorlib}/CSS
 %{perl_vendorlib}/Cache
 %{perl_vendorlib}/Carp
@@ -230,10 +232,16 @@ done <<EOF
 %{perl_vendorlib}/Hook
 %{perl_vendorlib}/I18N
 %{perl_vendorlib}/IO
+%{perl_vendorlib}/IO/Compress
+%{perl_vendorlib}/IO/Compress/Adapter
 %{perl_vendorlib}/IO/Socket
+%{perl_vendorlib}/IO/Uncompress
+%{perl_vendorlib}/IO/Uncompress/Adapter
 %{perl_vendorlib}/IPC
 %{perl_vendorlib}/Image
 %{perl_vendorlib}/Inline
+%{perl_vendorlib}/JSON
+%{perl_vendorlib}/JSON/PP
 %{perl_vendorlib}/Jabber
 %{perl_vendorlib}/JavaScript
 %{perl_vendorlib}/Language
@@ -250,6 +258,7 @@ done <<EOF
 %{perl_vendorlib}/MIME
 %{perl_vendorlib}/Mail
 %{perl_vendorlib}/Math
+%{perl_vendorlib}/Math/BigFloat
 %{perl_vendorlib}/Math/BigInt
 %{perl_vendorlib}/Math/Business
 %{perl_vendorlib}/Math/Calc
@@ -259,6 +268,7 @@ done <<EOF
 %{perl_vendorlib}/Module/Pluggable
 %{perl_vendorlib}/Mozilla
 %{perl_vendorlib}/Net
+%{perl_vendorlib}/Net/FTP
 %{perl_vendorlib}/Net/IDN
 %{perl_vendorlib}/Net/SMTP
 %{perl_vendorlib}/NetAddr
@@ -309,6 +319,7 @@ done <<EOF
 %{perl_vendorlib}/TAP/Formatter
 %{perl_vendorlib}/TAP/Formatter/Console
 %{perl_vendorlib}/TAP/Formatter/File
+%{perl_vendorlib}/TAP/Harness
 %{perl_vendorlib}/TAP/Parser
 %{perl_vendorlib}/TAP/Parser/Iterator
 %{perl_vendorlib}/TAP/Parser/Result
@@ -328,6 +339,7 @@ done <<EOF
 %{perl_vendorlib}/Text/Password
 %{perl_vendorlib}/Text/Query
 %{perl_vendorlib}/Tie
+%{perl_vendorlib}/Tie/RefHash
 %{perl_vendorlib}/Time
 %{perl_vendorlib}/Tree
 %{perl_vendorlib}/UNIVERSAL
