@@ -12,7 +12,7 @@
 %define		perl_vendorarch	%{_libdir}/perl5/vendor_perl/%{abi}/%{_target_platform}%{perlthread}
 %define		perl_vendorlib	%{_datadir}/perl5/vendor_perl
 
-%define		rel	4
+%define		rel	5
 Summary:	Common dirs for Perl modules
 Summary(pl.UTF-8):	Katalogi wspólne dla modułów Perla
 Name:		perl-dirs
@@ -215,6 +215,7 @@ done <<EOF
 %{perl_vendorlib}/Expect
 %{perl_vendorlib}/Exporter
 %{perl_vendorlib}/ExtUtils
+%{perl_vendorlib}/FCGI
 %{perl_vendorlib}/File
 %{perl_vendorlib}/File/Path
 %{perl_vendorlib}/Filesys
