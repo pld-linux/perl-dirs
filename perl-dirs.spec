@@ -12,7 +12,7 @@
 %define		perl_vendorarch	%{_libdir}/perl5/vendor_perl/%{abi}/%{_target_platform}%{perlthread}
 %define		perl_vendorlib	%{_datadir}/perl5/vendor_perl
 
-%define		rel	12
+%define		rel	13
 Summary:	Common dirs for Perl modules
 Summary(pl.UTF-8):	Katalogi wspólne dla modułów Perla
 Name:		perl-dirs
@@ -62,6 +62,7 @@ done <<EOF
 %{perl_vendorarch}/Crypt
 %{perl_vendorarch}/Crypt/OpenSSL
 %{perl_vendorarch}/Data
+%{perl_vendorarch}/Data/JavaScript
 %{perl_vendorarch}/DateTime
 %{perl_vendorarch}/Devel
 %{perl_vendorarch}/Device
@@ -221,6 +222,7 @@ done <<EOF
 %{perl_vendorlib}/File/Path
 %{perl_vendorlib}/Filesys
 %{perl_vendorlib}/Filter
+%{perl_vendorlib}/Firefox
 %{perl_vendorlib}/Font
 %{perl_vendorlib}/Games
 %{perl_vendorlib}/Getopt
@@ -228,6 +230,8 @@ done <<EOF
 %{perl_vendorlib}/Graph
 %{perl_vendorlib}/Graphics
 %{perl_vendorlib}/HTML
+%{perl_vendorlib}/HTML/Display
+%{perl_vendorlib}/HTML/Selector
 %{perl_vendorlib}/HTTP
 %{perl_vendorlib}/HTTP/Message
 %{perl_vendorlib}/Hash
@@ -311,6 +315,7 @@ done <<EOF
 %{perl_vendorlib}/Sendmail
 %{perl_vendorlib}/Server
 %{perl_vendorlib}/Set
+%{perl_vendorlib}/Shell
 %{perl_vendorlib}/Sort
 %{perl_vendorlib}/Speech
 %{perl_vendorlib}/Spreadsheet
