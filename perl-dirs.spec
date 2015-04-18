@@ -12,7 +12,7 @@
 %define		perl_vendorarch	%{_libdir}/perl5/vendor_perl/%{abi}/%{_target_platform}%{perlthread}
 %define		perl_vendorlib	%{_datadir}/perl5/vendor_perl
 
-%define		rel	13
+%define		rel	14
 Summary:	Common dirs for Perl modules
 Summary(pl.UTF-8):	Katalogi wspólne dla modułów Perla
 Name:		perl-dirs
@@ -225,6 +225,7 @@ done <<EOF
 %{perl_vendorlib}/Firefox
 %{perl_vendorlib}/Font
 %{perl_vendorlib}/Games
+%{perl_vendorlib}/Geo
 %{perl_vendorlib}/Getopt
 %{perl_vendorlib}/GnuPG
 %{perl_vendorlib}/Graph
