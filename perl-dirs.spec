@@ -84,6 +84,7 @@ done <<EOF
 %{perl_vendorarch}/MIME
 %{perl_vendorarch}/Math
 %{perl_vendorarch}/Math/BigInt
+%{perl_vendorarch}/Math/Geometry
 %{perl_vendorarch}/Net
 %{perl_vendorarch}/Ogg
 %{perl_vendorarch}/Ogg/Vorbis
@@ -141,6 +142,7 @@ done <<EOF
 %{perl_vendorarch}/auto/MIME
 %{perl_vendorarch}/auto/Math
 %{perl_vendorarch}/auto/Math/BigInt
+%{perl_vendorarch}/auto/Math/Geometry
 %{perl_vendorarch}/auto/Net
 %{perl_vendorarch}/auto/Ogg
 %{perl_vendorarch}/auto/Ogg/Vorbis
