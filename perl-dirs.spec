@@ -3,7 +3,7 @@
 %bcond_without	threads		# build without support for threads in Perl
 
 %if "%{pld_release}" == "th"
-%define		abi	5.20.0
+%define		abi	5.22.0
 %else
 %define		abi	5.8.0
 %endif
