@@ -12,12 +12,11 @@
 %define		perl_vendorarch	%{_libdir}/perl5/vendor_perl/%{abi}/%{_target_platform}%{perlthread}
 %define		perl_vendorlib	%{_datadir}/perl5/vendor_perl
 
-%define		rel	16
 Summary:	Common dirs for Perl modules
 Summary(pl.UTF-8):	Katalogi wspólne dla modułów Perla
 Name:		perl-dirs
-Version:	5
-Release:	%{rel}@%{abi}
+Version:	%{abi}
+Release:	1
 License:	Public Domain
 Group:		Development/Languages/Perl
 BuildRequires:	perl-base
