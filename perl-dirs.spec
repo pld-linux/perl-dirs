@@ -47,6 +47,7 @@ done <<EOF
 %{perl_vendorarch}/Algorithm
 %{perl_vendorarch}/Apache
 %{perl_vendorarch}/Astro
+%{perl_vendorarch}/Astro/Coord
 %{perl_vendorarch}/Audio
 %{perl_vendorarch}/Authen
 %{perl_vendorarch}/B
