@@ -47,7 +47,6 @@ done <<EOF
 %{perl_vendorarch}/Algorithm
 %{perl_vendorarch}/Apache
 %{perl_vendorarch}/Astro
-%{perl_vendorarch}/Astro/Coord
 %{perl_vendorarch}/Audio
 %{perl_vendorarch}/Authen
 %{perl_vendorarch}/B
@@ -179,6 +178,7 @@ done <<EOF
 %{perl_vendorlib}/Archive
 %{perl_vendorlib}/Array
 %{perl_vendorlib}/Astro
+%{perl_vendorlib}/Astro/Coord
 %{perl_vendorlib}/Attribute
 %{perl_vendorlib}/Audio
 %{perl_vendorlib}/Authen
