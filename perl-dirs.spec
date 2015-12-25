@@ -63,6 +63,7 @@ done <<EOF
 %{perl_vendorarch}/Data
 %{perl_vendorarch}/Data/JavaScript
 %{perl_vendorarch}/DateTime
+%{perl_vendorarch}/DateTime/Event
 %{perl_vendorarch}/Devel
 %{perl_vendorarch}/Device
 %{perl_vendorarch}/Digest
