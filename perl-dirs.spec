@@ -70,6 +70,7 @@ done <<EOF
 %{perl_vendorarch}/Digest
 %{perl_vendorarch}/Encode
 %{perl_vendorarch}/Event
+%{perl_vendorarch}/FFI
 %{perl_vendorarch}/File
 %{perl_vendorarch}/Graphics
 %{perl_vendorarch}/HTML
@@ -132,6 +133,7 @@ done <<EOF
 %{perl_vendorarch}/auto/Digest
 %{perl_vendorarch}/auto/Encode
 %{perl_vendorarch}/auto/Event
+%{perl_vendorarch}/auto/FFI
 %{perl_vendorarch}/auto/File
 %{perl_vendorarch}/auto/Graphics
 %{perl_vendorarch}/auto/HTML
