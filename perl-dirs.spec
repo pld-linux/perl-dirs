@@ -16,7 +16,7 @@ Summary:	Common dirs for Perl modules
 Summary(pl.UTF-8):	Katalogi wspólne dla modułów Perla
 Name:		perl-dirs
 Version:	%{abi}
-Release:	2
+Release:	3
 License:	Public Domain
 Group:		Development/Languages/Perl
 BuildRequires:	perl-base
@@ -306,6 +306,7 @@ done <<EOF
 %{perl_vendorlib}/Parallel
 %{perl_vendorlib}/Params
 %{perl_vendorlib}/Parse
+%{perl_vendorlib}/Perl
 %{perl_vendorlib}/PerlIO
 %{perl_vendorlib}/PerlIO/via
 %{perl_vendorlib}/Pod
