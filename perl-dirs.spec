@@ -3,7 +3,7 @@
 %bcond_without	threads		# build without support for threads in Perl
 
 %if "%{pld_release}" == "th"
-%define		abi	5.24.0
+%define		abi	5.26.0
 %else
 %define		abi	5.8.0
 %endif
@@ -16,7 +16,7 @@ Summary:	Common dirs for Perl modules
 Summary(pl.UTF-8):	Katalogi wspólne dla modułów Perla
 Name:		perl-dirs
 Version:	%{abi}
-Release:	3
+Release:	1
 License:	Public Domain
 Group:		Development/Languages/Perl
 BuildRequires:	perl-base
