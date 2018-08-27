@@ -212,6 +212,7 @@ done <<EOF
 %{perl_vendorlib}/Config
 %{perl_vendorlib}/Convert
 %{perl_vendorlib}/Crypt
+%{perl_vendorlib}/Crypt/OpenSSL
 %{perl_vendorlib}/DBD
 %{perl_vendorlib}/DNS
 %{perl_vendorlib}/Data
