@@ -309,6 +309,8 @@ done <<EOF
 %{perl_vendorlib}/Module/Pluggable
 %{perl_vendorlib}/Mozilla
 %{perl_vendorlib}/Net
+%{perl_vendorlib}/Net/Async
+%{perl_vendorlib}/Net/Async/HTTP
 %{perl_vendorlib}/Net/DNS
 %{perl_vendorlib}/Net/FTP
 %{perl_vendorlib}/Net/IDN
@@ -330,6 +332,11 @@ done <<EOF
 %{perl_vendorlib}/Perl
 %{perl_vendorlib}/PerlIO
 %{perl_vendorlib}/PerlIO/via
+%{perl_vendorlib}/Plack
+%{perl_vendorlib}/Plack/Handler
+%{perl_vendorlib}/Plack/Handler/Net
+%{perl_vendorlib}/Plack/Handler/Net/Async
+%{perl_vendorlib}/Plack/Handler/Net/Async/HTTP
 %{perl_vendorlib}/Pod
 %{perl_vendorlib}/PostScript
 %{perl_vendorlib}/Probe
