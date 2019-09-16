@@ -241,6 +241,7 @@ done <<EOF
 %{perl_vendorlib}/Dir
 %{perl_vendorlib}/Email
 %{perl_vendorlib}/Email/Simple
+%{perl_vendorlib}/Encoding
 %{perl_vendorlib}/Error
 %{perl_vendorlib}/Eval
 %{perl_vendorlib}/Event
