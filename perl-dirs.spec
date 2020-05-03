@@ -16,7 +16,7 @@ Summary:	Common dirs for Perl modules
 Summary(pl.UTF-8):	Katalogi wspólne dla modułów Perla
 Name:		perl-dirs
 Version:	%{abi}
-Release:	2
+Release:	3
 License:	Public Domain
 Group:		Development/Languages/Perl
 BuildRequires:	perl-base
@@ -45,6 +45,7 @@ while read dir; do
 done <<EOF
 %{perl_vendorarch}/AI
 %{perl_vendorarch}/Algorithm
+%{perl_vendorarch}/Alien
 %{perl_vendorarch}/Apache
 %{perl_vendorarch}/Astro
 %{perl_vendorarch}/Audio
@@ -124,6 +125,7 @@ done <<EOF
 %{perl_vendorarch}/YAML
 %{perl_vendorarch}/auto/AI
 %{perl_vendorarch}/auto/Algorithm
+%{perl_vendorarch}/auto/Alien
 %{perl_vendorarch}/auto/Astro
 %{perl_vendorarch}/auto/Audio
 %{perl_vendorarch}/auto/Authen
@@ -189,9 +191,12 @@ done <<EOF
 %{perl_vendorarch}/auto/WWW
 %{perl_vendorarch}/auto/XML
 %{perl_vendorarch}/auto/YAML
+%{perl_vendorarch}/auto/share
+%{perl_vendorarch}/auto/share/dist
 %{perl_vendorlib}/AI
 %{perl_vendorlib}/AI/NeuralNet
 %{perl_vendorlib}/Algorithm
+%{perl_vendorlib}/Alient
 %{perl_vendorlib}/Any
 %{perl_vendorlib}/Apache
 %{perl_vendorlib}/Apache2
