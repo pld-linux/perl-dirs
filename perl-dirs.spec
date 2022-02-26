@@ -5,7 +5,7 @@
 %if "%{pld_release}" == "ac"
 %define		abi	5.8.0
 %else
-%define		abi	5.32.0
+%define		abi	5.34.0
 %endif
 
 %define		perlthread		%{?with_threads:-thread-multi}
@@ -16,7 +16,7 @@ Summary:	Common dirs for Perl modules
 Summary(pl.UTF-8):	Katalogi wspólne dla modułów Perla
 Name:		perl-dirs
 Version:	%{abi}
-Release:	2
+Release:	1
 License:	Public Domain
 Group:		Development/Languages/Perl
 BuildRequires:	perl-base
