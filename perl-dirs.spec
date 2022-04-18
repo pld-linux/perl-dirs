@@ -327,6 +327,7 @@ done <<EOF
 %{perl_vendorlib}/Net/DNS
 %{perl_vendorlib}/Net/FTP
 %{perl_vendorlib}/Net/IDN
+%{perl_vendorlib}/Net/MQTT
 %{perl_vendorlib}/Net/SMTP
 %{perl_vendorlib}/NetAddr
 %{perl_vendorlib}/NetAddr/IP
