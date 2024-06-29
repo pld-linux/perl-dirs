@@ -5,7 +5,7 @@
 %if "%{pld_release}" == "ac"
 %define		abi	5.8.0
 %else
-%define		abi	5.38.0
+%define		abi	5.40.0
 %endif
 
 %define		perlthread		%{?with_threads:-thread-multi}
