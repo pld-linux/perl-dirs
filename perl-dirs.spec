@@ -199,6 +199,7 @@ done <<EOF
 %{perl_vendorarch}/auto/re/engine
 %{perl_vendorarch}/auto/share
 %{perl_vendorarch}/auto/share/dist
+%{perl_vendorarch}/auto/share/module
 %{perl_vendorlib}/AI
 %{perl_vendorlib}/AI/NeuralNet
 %{perl_vendorlib}/Algorithm
