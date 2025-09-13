@@ -2,11 +2,7 @@
 # Conditional build:
 %bcond_without	threads		# build without support for threads in Perl
 
-%if "%{pld_release}" == "ac"
-%define		abi	5.8.0
-%else
 %define		abi	5.42.0
-%endif
 
 %define		perlthread		%{?with_threads:-thread-multi}
 %define		perl_vendorarch	%{_libdir}/perl5/vendor_perl/%{abi}/%{_target_platform}%{perlthread}
@@ -16,7 +12,7 @@ Summary:	Common dirs for Perl modules
 Summary(pl.UTF-8):	Katalogi wspólne dla modułów Perla
 Name:		perl-dirs
 Version:	%{abi}
-Release:	1
+Release:	2
 License:	Public Domain
 Group:		Development/Languages/Perl
 BuildRequires:	perl-base
@@ -408,6 +404,9 @@ done <<EOF
 %{perl_vendorlib}/Test/Mock
 %{perl_vendorlib}/Test/Perl
 %{perl_vendorlib}/Test/WWW
+%{perl_vendorlib}/Test2
+%{perl_vendorlib}/Test2/Event
+%{perl_vendorlib}/Test2/Plugin
 %{perl_vendorlib}/Text
 %{perl_vendorlib}/Text/Password
 %{perl_vendorlib}/Text/Query
