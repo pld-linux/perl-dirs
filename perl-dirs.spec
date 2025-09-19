@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_without	threads		# build without support for threads in Perl
+%bcond_without	threads		# threads support in Perl
 
 %define		abi	5.42.0
 
@@ -251,6 +251,7 @@ done <<EOF
 %{perl_vendorlib}/Email
 %{perl_vendorlib}/Email/Simple
 %{perl_vendorlib}/Encoding
+%{perl_vendorlib}/Env
 %{perl_vendorlib}/Error
 %{perl_vendorlib}/Eval
 %{perl_vendorlib}/Event
