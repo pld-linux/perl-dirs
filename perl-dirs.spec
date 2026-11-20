@@ -12,7 +12,7 @@ Summary:	Common dirs for Perl modules
 Summary(pl.UTF-8):	Katalogi wspólne dla modułów Perla
 Name:		perl-dirs
 Version:	%{abi}
-Release:	3
+Release:	4
 License:	Public Domain
 Group:		Development/Languages/Perl
 BuildRequires:	perl-base
@@ -217,6 +217,7 @@ done <<EOF
 %{perl_vendorlib}/Astro/Coord
 %{perl_vendorlib}/Attribute
 %{perl_vendorlib}/Audio
+%{perl_vendorlib}/Auth
 %{perl_vendorlib}/Authen
 %{perl_vendorlib}/B
 %{perl_vendorlib}/Barcode
@@ -321,6 +322,7 @@ done <<EOF
 %{perl_vendorlib}/Modem
 %{perl_vendorlib}/Module
 %{perl_vendorlib}/Module/Pluggable
+%{perl_vendorlib}/MogileFS
 %{perl_vendorlib}/Mozilla
 %{perl_vendorlib}/Net
 %{perl_vendorlib}/Net/Async
@@ -328,7 +330,9 @@ done <<EOF
 %{perl_vendorlib}/Net/DNS
 %{perl_vendorlib}/Net/FTP
 %{perl_vendorlib}/Net/IDN
+%{perl_vendorlib}/Net/IMAP
 %{perl_vendorlib}/Net/MQTT
+%{perl_vendorlib}/Net/SFTP
 %{perl_vendorlib}/Net/SMTP
 %{perl_vendorlib}/NetAddr
 %{perl_vendorlib}/NetAddr/IP
@@ -340,6 +344,7 @@ done <<EOF
 %{perl_vendorlib}/Object
 %{perl_vendorlib}/PAR
 %{perl_vendorlib}/PHP
+%{perl_vendorlib}/POD2
 %{perl_vendorlib}/POSIX
 %{perl_vendorlib}/Package
 %{perl_vendorlib}/Parallel
